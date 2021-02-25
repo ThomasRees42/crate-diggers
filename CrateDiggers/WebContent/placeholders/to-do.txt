@@ -1,0 +1,6 @@
+Search filter/sort
+Personalised recommendations
+Wishlist
+Article module
+Admin searchbars
+Write more manual DAO methods
