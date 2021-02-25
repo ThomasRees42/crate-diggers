@@ -13,15 +13,18 @@
 	
 	<div class="center">
 		<h2>Personalised Recommendations</h2>
-	</div>
-	
-	<div class="album-group">
-		<c:forEach items="${recommendations.subList(0,4)}" var="album">
-				<jsp:directive.include file="album_group.jsp" />
-		</c:forEach>
-		<c:forEach items="${recommendations.subList(4,8)}" var="album">
-				<jsp:directive.include file="album_group.jsp" />
-		</c:forEach>
+		
+		<div class="album-group">
+			<c:forEach items="${recommendations.subList(0,4)}" var="album">
+					<jsp:directive.include file="album_group.jsp" />
+			</c:forEach>
+			<div class="next-row">
+				<c:forEach items="${recommendations.subList(4,8)}" var="album">
+					<jsp:directive.include file="album_group.jsp" />
+			</c:forEach>			
+			</div>
+		</div>
+		
 	</div>
 	
 	<jsp:directive.include file="footer.jsp" />
